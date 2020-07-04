@@ -4,26 +4,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Travel Blog</title>
 
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+
     <style>
         .nav{
-            text-align: center;
-            background-color: darkblue;
+            background-color: white;
             padding:16px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0,0.2);
+            position: sticky;
+            top: 0;
+            width:100%;
         }
 
         #nav-item{
-            color: white;
+            color: black;
             font-size: larger;
             padding: 8px;
             text-decoration: none;
             font-family:'Times New Roman', Times, serif ;
         }
+
+        #logo{
+            color: rgb(0, 0,0);
+            font-size: 40px;
+            padding: 10px;
+            padding-left: 48px;
+            font-weight:bolder;
+            font-family: 'Aclonica';
+        }
         
+        #head-img{
+            width:100%; 
+            max-width:1000px; 
+            height:400px; 
+            padding:24px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50px;
+        }
+
+        section{
+            display: inline-block;
+            width:70%;
+            padding: 16px;
+            vertical-align: top;
+            background-color: white;
+            margin-left: 24px;
+            margin-right: 24px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        h1{
+            text-align: center;
+            font-family: 'Aclonica'
+        }
+
+        aside{
+            display: inline-block;
+            width:25%;
+            vertical-align: top;
+            background-color: white;
+            padding:16px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 5px grey;
+            border-radius: 8px;
+        }
+
+        .aside-wrapper{
+            width: 100%;
+            border-bottom: 1px solid #aaa;
+            margin-bottom: 16px;
+        }
+
+        .aside-wrapper:last-of-type{
+            border: 0px;
+            margin-bottom: 0;
+        }
+
+        .aside-wrapper > img{
+            width:100%;
+            border-radius: 10px;
+        }
+
+        .aside-wrapper p{
+            font-size:18px;
+            text-align: center;
+        }
+
         #image-item{
             width: 350px; 
             height:300px;
-            padding-left: auto;
-            padding-right: auto;
+            border-radius: 10px;
+        }
+
+        .figure{
+            padding-left: 48px;
+            display: inline-block;
         }
 
         #image-description{
@@ -44,41 +123,112 @@
             display: inline-block;
         }
 
+        @media screen and (max-width: 1040px) {
+            section{
+                display: block;
+                width:100%;
+                margin-left: 24px;
+                margin-right: auto;
+
+            }
+            
+        }
+
+        @media screen and (max-width: 990px) {
+            section{
+                text-align: center;
+                display: block;
+                width:100%;
+                margin-left: 24px;
+                padding-left: 0px;
+            }
+
+            aside{
+                display: block;
+                width: 100%;
+                margin-left: 24px;
+            }
+
+            .nav{
+                text-align: center;
+                display: block;
+                width:100%;
+            }
+            
+            #nav-item{
+                text-align: center;
+            }
+
+            #logo{
+                display: block;
+                padding-left: 0px;
+            }
+        }
+
     </style>
 </head>
-<body style="background-color: lightgray;">
+<body style="background-color: rgb(0, 0, 0); margin:0;">
     <div class="nav">
+        <span id="logo">TRAVELLER</span>
         <a id="nav-item" href="/Travel Blog/index.html">Trips</a>
         <a id="nav-item" href="/Travel Blog/about.html">About</a>
         <a id="nav-item" href="/Travel Blog/contact.html">Contact</a>
     </div>
-    <img src="https://cdn.vox-cdn.com/thumbor/gb2XMzYwP2_Q9yMbp-2OLP2ST3U=/0x0:6500x4213/1200x800/filters:focal(2730x1587:3770x2627)/cdn.vox-cdn.com/uploads/chorus_image/image/58549589/shutterstock_1006507063.0.jpg" alt="colourful-buildings"
-    style="width:100%; height:500px;">
-    <h1 style="text-align: center;">My Travel Diary</h1>
-        <a href="/Travel Blog/place.html"><figure class="image">
-            <img id="image-item" src="https://magarticles.magzter.com/articles/2136/389157/5de8f665ef5fc/Ladakh-The-India-Eurasia-Collision-Region.jpg" alt="ladakh" >
-            <figcaption id="image-description">Ladakh</figcaption>
-        </figure></a>
-        <a href="/Travel Blog/place.html"><figure class="image" >
-            <img id="image-item" src="https://thediplomat.com/wp-content/uploads/2018/01/thediplomat-800px-kashmir.valley.original.11730.jpg" alt="ladakh" >
-            <figcaption id="image-description">Kashmir</figcaption>
-        </figure></a>
-        <a href="/Travel Blog/place.html"><figure class="image" >
-            <img id="image-item" src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2017/09/Best-Places-to-visit-in-coorg.jpg" alt="ladakh" >
-            <figcaption id="image-description">Coorg, Karnataka</figcaption>
-        </figure></a>
-        <a href="/Travel Blog/place.html"><figure class="image" >
-        <img id="image-item" src="https://www.deshgujarat.com/wp-content/uploads/2018/10/Statue-of-Unity-Gujarat-India.jpg" alt="ladakh" >
-        <figcaption id="image-description">Gujarat</figcaption>
-    </figure></a>
-    <a href="/Travel Blog/place.html"><figure class="image" >
-        <img id="image-item" src="https://www.india.com/wp-content/uploads/2014/11/Chittorgarh.png" alt="ladakh" >
-        <figcaption id="image-description">Rajasthan</figcaption>
-    </figure></a>
-    <a href="/Travel Blog/place.html"><figure class="image" >
-        <img id="image-item" src="https://www.thebetterindia.com/wp-content/uploads/2019/01/Wayanad-1.jpg" alt="ladakh" >
-        <figcaption id="image-description">Wayanad, Kerala</figcaption>
-    </figure></a>
+    <img id="head-img" src="https://cdn.vox-cdn.com/thumbor/gb2XMzYwP2_Q9yMbp-2OLP2ST3U=/0x0:6500x4213/1200x800/filters:focal(2730x1587:3770x2627)/cdn.vox-cdn.com/uploads/chorus_image/image/58549589/shutterstock_1006507063.0.jpg" alt="colourful-buildings">
+    <section>
+        <h1 >My Travel Diary</h1>
+        <div class="figure">
+            <a href="/Travel Blog/place.html"><figure class="image">
+                <img id="image-item" src="https://magarticles.magzter.com/articles/2136/389157/5de8f665ef5fc/Ladakh-The-India-Eurasia-Collision-Region.jpg" alt="ladakh" >
+                <figcaption id="image-description">Ladakh</figcaption>
+            </figure></a>
+        </div>
+        <div class="figure">
+            <a href="/Travel Blog/place.html"><figure class="image" >
+                <img id="image-item" src="https://thediplomat.com/wp-content/uploads/2018/01/thediplomat-800px-kashmir.valley.original.11730.jpg" alt="ladakh" >
+                <figcaption id="image-description">Kashmir</figcaption>
+            </figure></a>
+        </div>
+        <div class="figure">
+            <a href="/Travel Blog/place.html"><figure class="image" >
+                <img id="image-item" src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2017/09/Best-Places-to-visit-in-coorg.jpg" alt="ladakh" >
+                <figcaption id="image-description">Coorg, Karnataka</figcaption>
+            </figure></a>
+        </div>
+        <div class="figure">
+            <a href="/Travel Blog/place.html"><figure class="image" >
+            <img id="image-item" src="https://www.deshgujarat.com/wp-content/uploads/2018/10/Statue-of-Unity-Gujarat-India.jpg" alt="ladakh" >
+            <figcaption id="image-description">Gujarat</figcaption>
+            </figure></a>
+        </div>
+        <div class="figure">
+            <a href="/Travel Blog/place.html"><figure class="image" >
+            <img id="image-item" src="https://www.india.com/wp-content/uploads/2014/11/Chittorgarh.png" alt="ladakh" >
+            <figcaption id="image-description">Rajasthan</figcaption>
+            </figure></a>
+        </div>    
+        <div class="figure">
+            <a href="/Travel Blog/place.html"><figure class="image" >
+            <img id="image-item" src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/11/Wayanad-In-January-cover_15th-Nov.jpg" alt="ladakh" >
+            <figcaption id="image-description">Wayanad, Kerala</figcaption>
+            </figure></a>
+        </div>
+    </section>
+    <aside>
+        <h1>Bucketlist</h1>
+        <div class="aside-wrapper">
+            <img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/0e3794a0b646d638627afb626bf9ee46f472feb1/big-0bb2a2bea537c680f141d40cb484d888.jpg" alt="greece">
+            <p>Greece</p>
+        </div>
+        <div class="aside-wrapper">
+            <img src="https://msbeta.chase.com/content/dam/jpm/merchant-services/country-reports/turkey/JP_Morgan_Turkey-Headers-1.jpg" alt="turkey">
+            <p>Turkey</p>
+        </div>
+        <div class="aside-wrapper">
+            <img src="https://www.aberdeen.com/wp-content/uploads/2018/09/GettyImages-900718148.jpg" alt="malta">
+            <p>Malta</p>
+        </div>
+    </aside>
     
 </body>
 </html>
